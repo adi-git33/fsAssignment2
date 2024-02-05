@@ -1,6 +1,5 @@
 // Imports
 require('dotenv').config();
-require('../dbConnection');
 const express = require('express');
 const logger = require('morgan');
 const { reportsRouter } = require('../router/reports.router');
@@ -11,7 +10,7 @@ const port = process.env.PORT || 8080;
 
 // Middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 
 // Routes

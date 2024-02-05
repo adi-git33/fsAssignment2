@@ -3,11 +3,10 @@ const { reportsController } = require('../controller/reports.controller');
 
 const reportsRouter = new Router();
 
-reportsRouter.get('/', reportsController.getReports);
-reportsRouter.get('/reports', reportsController.getReports);
-reportsRouter.get('/reports/:requestId', reportsController.getReportById);
-reportsRouter.post('/reports', reportsController.createReport);
-reportsRouter.put('/reports/:requestId', reportsController.updateReport);
-reportsRouter.delete('/reports/:requestId', reportsController.deleteReport);
+reportsRouter.get('/', reportsController.getAllReports);
+reportsRouter.get('/:reportId', reportsController.getReportById);
+// reportsRouter.post('reports/id', reportsController.createReport);
+// reportsRouter.put('/reports/:requestId', reportsController.updateReport);
+// reportsRouter.delete('/reports/:requestId', reportsController.deleteReport);
 
 module.exports = { reportsRouter };
