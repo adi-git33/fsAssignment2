@@ -1,8 +1,9 @@
-const { Router} = require("express");
+const { Router } = require('express');
 const { reportsController } = require('../controller/reports.controller');
 
 const reportsRouter = new Router();
 
+reportsRouter.get('/', reportsController.getReports);
 reportsRouter.get('/reports', reportsController.getReports);
 reportsRouter.get('/reports/:requestId', reportsController.getReportById);
 reportsRouter.post('/reports', reportsController.createReport);

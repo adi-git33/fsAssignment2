@@ -1,29 +1,5 @@
-class ServerError extends Error {
-    constructor(action) {
-        super(`Internal Server Error - Couldn't ${action} report`);
-        this.name = "ServerError";
-        this.status = 500;
-    }
-}
+const { BadRequestError } = require('./badRequest.error');
+const { NotFoundError } = require('./notFound.error');
+const { ServerError } = require('./server.error');
 
-class NotFoundError extends Error {
-    constructor(entity) {
-        super(`${entity} not found`);
-        this.name = "NotFoundError";
-        this.status = 404;
-    }
-}
-
-class BadRequestError extends Error {
-    constructor(element) {
-        super(`please provide: ${element}`);
-        this.name = "BadRequestError";
-        this.status = 400;
-    }
-}
-
-module.exports = {
-    ServerError,
-    NotFoundError,
-    BadRequestError
-};
+module.exports = { BadRequestError, NotFoundError, ServerError };
