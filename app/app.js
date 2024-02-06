@@ -23,3 +23,5 @@ app.use((req, res) => {
 
 // Start server
 app.listen(port, () => console.log(`Express server is running on port ${port}`));
+
+module.exports = app;
