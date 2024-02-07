@@ -12,19 +12,19 @@ class ReportsRepository {
   }
 
   retrieveReport(id) {
-    return this.storage.retrieve(id);
+    return this.storage.retrieve({ _id: id });
   }
 
-  create(report) {
-    return this.storage.create(report);
+  createReport(report) {
+      return this.storage.create(report);
   }
 
-  update(id, report) {
-    return this.storage.update(id, report);
+  updateReport(id, report) {
+      return this.storage.update(id, report);
   }
 
-  delete(report) {
-    return this.storage.delete(report);
+  deleteReport(report) {
+    return this.storage.delete({ _id: report });
   }
 }
 

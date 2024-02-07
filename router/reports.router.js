@@ -5,8 +5,8 @@ const reportsRouter = new Router();
 
 reportsRouter.get('/', reportsController.getAllReports);
 reportsRouter.get('/:reportId', reportsController.getReportById);
-// reportsRouter.post('reports/id', reportsController.createReport);
-// reportsRouter.put('/reports/:requestId', reportsController.updateReport);
-// reportsRouter.delete('/reports/:requestId', reportsController.deleteReport);
+reportsRouter.post('/', reportsController.createReport);
+// reportsRouter.put('/:reportId', reportsController.updateReport);
+reportsRouter.delete('/:reportId', reportsController.deleteReport);
 
 module.exports = { reportsRouter };
