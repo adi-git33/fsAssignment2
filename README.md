@@ -6,7 +6,7 @@
 
 The repository contains an Express.js application for managing reports. It provides endpoints to perform CRUD operations on reports stored in a MongoDB database.
 
-## Prerequisites
+### Prerequisites
 
 Before running this application, ensure you have the following installed:
 
@@ -87,5 +87,5 @@ DELETE http://localhost:8080/reports/65c392aba5313289286379fd
 ### Postman Documentation
 https://documenter.getpostman.com/view/32170224/2s9Yyzddn3
 
-## Testing
+### Testing
 Unit tests are provided using Jest and Supertest. To run the tests, use the following command: npm test
