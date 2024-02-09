@@ -58,9 +58,11 @@ Body:
         "city": "Cfar Gaza",
         "street": "P",
         "building_number": 1
-    },
-    "damage_desc": "car was set on fire"
+        },
+        "damage_desc": "car was set on fire"
 }
+
+        
 
 PUT Update Report:
 PUT http://localhost:8080/reports/65c668cac54499e0ac3191f7
@@ -74,9 +76,10 @@ Body:
         "city": "Ashdod",
         "street": "C",
         "building_number": 1
-    },
+        },
     "damage_desc": "car was set on fire"
 }
+
 
 DELETE Report:
 DELETE http://localhost:8080/reports/65c392aba5313289286379fd
