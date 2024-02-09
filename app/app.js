@@ -1,8 +1,10 @@
 // Imports
-require('dotenv').config();
+require("express-async-errors");
+const errorHandeler = require('../middlewear/errorHandler')
 const express = require('express');
 const logger = require('morgan');
 const { reportsRouter } = require('../router/reports.router');
+
 
 // Constants
 const app = express();
@@ -15,7 +17,7 @@ app.use(logger('dev'));
 
 // Routes
 app.use('/reports', reportsRouter);
-
+app.use(errorHandeler);
 // Connection
 app.use((req, res) => {
   res.status(400).send("Couldn't connect");
