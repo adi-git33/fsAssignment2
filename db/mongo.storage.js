@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 const Path = require('path');
-const { EventEmitter } = require('events');
 const consts = require('../constants');
 
 const { DB_HOST, DB_USER, DB_PASS } = consts;
 
-class MongoStorage extends EventEmitter {
+class MongoStorage {
   constructor(entity) {
-    super();
     this.entityName = entity.charAt(0).toLowerCase() + entity.slice(1);
     this.Model = require(Path.join(__dirname, `../models/${this.entityName}.model.js`));
     this.connect();
@@ -39,9 +37,8 @@ class MongoStorage extends EventEmitter {
   }
 
   update(id, data) {
-    return this.Model.updateOne({ id }, data);
+    return this.Model.findOneAndUpdate(id, data, { new: true });
   }
-
 }
 
 module.exports = { MongoStorage };
