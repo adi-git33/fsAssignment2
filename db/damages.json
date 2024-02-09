@@ -1,0 +1,68 @@
+[
+  {
+    "user_id": 1,
+    "damage_type": "property",
+    "damage_cause": "missile",
+    "location": {
+      "city": "Ashkelon",
+      "street": "x",
+      "building_number": 10
+    },
+    "damage_desc": "windows were broken due to missile parts"
+  },
+  {
+    "user_id": 5,
+    "damage_type": "property",
+    "damage_cause": "fire",
+    "location": {
+      "city": "Beeri",
+      "street": "b",
+      "building_number": 5
+    },
+    "damage_desc": "house was set on fire"
+  },
+  {
+    "user_id": 6,
+    "damage_type": "property",
+    "damage_cause": "cat",
+    "location": {
+      "city": "Cat Island",
+      "street": "c",
+      "building_number": 33
+    },
+    "damage_desc": "there is no such thing as too many cats"
+  },
+  {
+    "user_id": 10,
+    "damage_type": "property",
+    "damage_cause": "missile",
+    "location": {
+      "city": "Ashkelon",
+      "street": "a",
+      "building_number": 6
+    },
+    "damage_desc": "the missile has entered the saferoom"
+  },
+  {
+    "user_id": 3,
+    "damage_type": "property",
+    "damage_cause": "missile",
+    "location": {
+      "city": "Rishon LeZion",
+      "street": "z",
+      "building_number": 20
+    },
+    "damage_desc": "a missile part fell on the car"
+  },
+  {
+    "user_id": 6,
+    "damage_type": "car",
+    "damage_cause": "fire",
+    "location": {
+      "city": "Cfar Gaza",
+      "street": "P",
+      "building_number": 1
+    },
+    "damage_desc": "car was set on fire"
+  }
+]
