@@ -3,6 +3,8 @@ require('express-async-errors');
 const express = require('express');
 const logger = require('morgan');
 const fs = require('fs');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const cors = require('cors');
 const errorHandeler = require('../middlewear/errorHandler');
 const { reportsRouter } = require('../router/reports.router');
 const filePath = require('../middlewear/logger');
@@ -13,6 +15,7 @@ const port = process.env.PORT || 8080;
 const logStream = fs.createWriteStream(filePath, { flags: 'a' });
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
