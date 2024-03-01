@@ -4,3 +4,4 @@
 ::1 - - [01/Mar/2024:14:35:23 +0000] "POST /reports HTTP/1.1" 400 82 "-" "PostmanRuntime/7.36.3"
 ::1 - - [01/Mar/2024:14:36:12 +0000] "PUT /reports/65e1e6ba41b56d85a48f5c08 HTTP/1.1" 500 97 "-" "PostmanRuntime/7.36.3"
 ::1 - - [01/Mar/2024:14:36:34 +0000] "PUT /reports/65e1e6ba41b56d85a48f5c08 HTTP/1.1" 200 407 "-" "PostmanRuntime/7.36.3"
+::1 - - [01/Mar/2024:14:40:34 +0000] "GET /reports HTTP/1.1" 200 2043 "-" "PostmanRuntime/7.36.3"
