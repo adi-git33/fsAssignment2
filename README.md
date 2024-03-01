@@ -50,35 +50,44 @@ POST New Report:
 POST http://localhost:8080/reports
 
 Body:
-{
-    "user_id": 6,
-    "damage_type": "car",
-    "damage_cause": "fire",
-    "location": {
-        "city": "Cfar Gaza",
-        "street": "P",
-        "building_number": 1
-        },
-        "damage_desc": "car was set on fire"
-}
-
+  {
+    "reportName": "Alfred Levy",
+    "contactNumber": "0531879655",
+    "emailAddress": "alfredl@gmail.com",
+    "incidentDate": "24/10/2023",
+    "incidentLocation": {
+      "city": "Ashkelon",
+      "street": "k",
+      "buildingNumber": 33
+    },
+    "damageType": "War Damage",
+    "effectedProperty": "House, Saferoom",
+    "extentOfDamage": "Sever Damage",
+    "estimatedRepairCost": 100000,
+    "damageDescription": "the missile has entered the saferoom"
+  },
         
 
 PUT Update Report:
 PUT http://localhost:8080/reports/65c668cac54499e0ac3191f7
 
 Body:
-{
-    "user_id": 6,
-    "damage_type": "car",
-    "damage_cause": "fire",
-    "location": {
-        "city": "Ashdod",
-        "street": "C",
-        "building_number": 1
-        },
-    "damage_desc": "car was set on fire"
-}
+  {
+    "reportName": "Alfred Levy",
+    "contactNumber": "0531879655",
+    "emailAddress": "alfredl@gmail.com",
+    "incidentDate": "24/10/2023",
+    "incidentLocation": {
+      "city": "Ashkelon",
+      "street": "k",
+      "buildingNumber": 33
+    },
+    "damageType": "War Damage",
+    "effectedProperty": "House, Saferoom",
+    "extentOfDamage": "Sever Damage",
+    "estimatedRepairCost": 100000,
+    "damageDescription": "the missile has entered the saferoom"
+  },
 
 
 DELETE Report:
