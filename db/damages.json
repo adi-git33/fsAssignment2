@@ -1,68 +1,82 @@
 [
   {
-    "user_id": 1,
-    "damage_type": "property",
-    "damage_cause": "missile",
-    "location": {
+    "reportName": "John Doe",
+    "contactNumber": "0525555555",
+    "emailAddress": "john@gmail.com",
+    "incidentDate": "12/11/2023",
+    "incidentLocation": {
       "city": "Ashkelon",
       "street": "x",
-      "building_number": 10
+      "buildingNumber": 10
     },
-    "damage_desc": "windows were broken due to missile parts"
+    "damageType": "War Damage",
+    "effectedProperty": "House, Windows",
+    "extentOfDamage": "Slight Damage",
+    "estimatedRepairCost": 1000,
+    "damageDescription": "windows were broken due to missile falling near the house"
   },
   {
-    "user_id": 5,
-    "damage_type": "property",
-    "damage_cause": "fire",
-    "location": {
+    "reportName": "Ruby Freeman",
+    "contactNumber": "0543555555",
+    "emailAddress": "ruby@gmail.com",
+    "incidentDate": "07/10/2023",
+    "incidentLocation": {
       "city": "Beeri",
       "street": "b",
-      "building_number": 5
+      "buildingNumber": 5
     },
-    "damage_desc": "house was set on fire"
+    "damageType": "War Damage",
+    "effectedProperty": "Car",
+    "extentOfDamage": "Sever Damage",
+    "estimatedRepairCost": 70000,
+    "damageDescription": "The car was set on fire"
   },
   {
-    "user_id": 6,
-    "damage_type": "property",
-    "damage_cause": "cat",
-    "location": {
-      "city": "Cat Island",
-      "street": "c",
-      "building_number": 33
-    },
-    "damage_desc": "there is no such thing as too many cats"
-  },
-  {
-    "user_id": 10,
-    "damage_type": "property",
-    "damage_cause": "missile",
-    "location": {
-      "city": "Ashkelon",
+    "reportName": "Noah Cohen",
+    "contactNumber": "0543559655",
+    "emailAddress": "noah@gmail.com",
+    "incidentDate": "21/01/2024",
+    "incidentLocation": {
+      "city": "Tel Aviv",
       "street": "a",
-      "building_number": 6
+      "buildingNumber": 31
     },
-    "damage_desc": "the missile has entered the saferoom"
+    "damageType": "Theft or Burglary",
+    "effectedProperty": "Car",
+    "extentOfDamage": "Sever Damage",
+    "estimatedRepairCost": 55000,
+    "damageDescription": "The car was stolen"
   },
   {
-    "user_id": 3,
-    "damage_type": "property",
-    "damage_cause": "missile",
-    "location": {
-      "city": "Rishon LeZion",
-      "street": "z",
-      "building_number": 20
+    "reportName": "Alfred Levy",
+    "contactNumber": "0531879655",
+    "emailAddress": "alfredl@gmail.com",
+    "incidentDate": "24/10/2023",
+    "incidentLocation": {
+      "city": "Ashkelon",
+      "street": "k",
+      "buildingNumber": 33
     },
-    "damage_desc": "a missile part fell on the car"
+    "damageType": "War Damage",
+    "effectedProperty": "House, Saferoom",
+    "extentOfDamage": "Sever Damage",
+    "estimatedRepairCost": 100000,
+    "damageDescription": "the missile has entered the saferoom"
   },
   {
-    "user_id": 6,
-    "damage_type": "car",
-    "damage_cause": "fire",
-    "location": {
-      "city": "Cfar Gaza",
-      "street": "P",
-      "building_number": 1
+    "reportName": "Lillie Sinay",
+    "contactNumber": "0551879315",
+    "emailAddress": "lillieS@gmail.com",
+    "incidentDate": "06/11/2023",
+    "incidentLocation": {
+      "city": "Rishon Le Zion",
+      "street": "m",
+      "buildingNumber": 55
     },
-    "damage_desc": "car was set on fire"
+    "damageType": "War Damage",
+    "effectedProperty": "Car",
+    "extentOfDamage": "Moderate Damage",
+    "estimatedRepairCost": 35000,
+    "damageDescription": "A missile part fell on the car"
   }
 ]

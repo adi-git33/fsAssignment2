@@ -35,16 +35,16 @@ exports.reportsController = {
   async createReport(req, res, next) {
     try {
       if (Object.keys(req.body).length === 0) throw new BadRequestError('create');
-      const {
-        user_id, damage_type, damage_cause, location, damage_desc,
-      } = req.body;
-      if (
-        !user_id
-        || !damage_type
-        || !damage_cause
-        || !location
-        || !damage_desc
-      ) throw new BadRequestError('create - missing arguments');
+      // const {
+      //   user_id, damage_type, damage_cause, location, damage_desc,
+      // } = req.body;
+      // if (
+      //   !user_id
+      //   || !damage_type
+      //   || !damage_cause
+      //   || !location
+      //   || !damage_desc
+      // ) throw new BadRequestError('create - missing arguments');
       const report = await createReport(req.body);
       res.status(200).json(report);
     } catch (error) {

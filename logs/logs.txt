@@ -1,0 +1,6 @@
+::1 - - [01/Mar/2024:14:33:46 +0000] "GET /reports HTTP/1.1" 200 1976 "-" "PostmanRuntime/7.36.3"
+::1 - - [01/Mar/2024:14:34:07 +0000] "GET /reports/65e1e6ba41b56d85a48f5c05 HTTP/1.1" 200 435 "-" "PostmanRuntime/7.36.3"
+::1 - - [01/Mar/2024:14:35:03 +0000] "POST /reports HTTP/1.1" 200 421 "-" "PostmanRuntime/7.36.3"
+::1 - - [01/Mar/2024:14:35:23 +0000] "POST /reports HTTP/1.1" 400 82 "-" "PostmanRuntime/7.36.3"
+::1 - - [01/Mar/2024:14:36:12 +0000] "PUT /reports/65e1e6ba41b56d85a48f5c08 HTTP/1.1" 500 97 "-" "PostmanRuntime/7.36.3"
+::1 - - [01/Mar/2024:14:36:34 +0000] "PUT /reports/65e1e6ba41b56d85a48f5c08 HTTP/1.1" 200 407 "-" "PostmanRuntime/7.36.3"
